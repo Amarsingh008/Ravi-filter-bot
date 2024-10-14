@@ -13,20 +13,20 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '24519654'))
-API_HASH = environ.get('API_HASH', '1ccea9c29a420df6a6622383fbd83bcd')
+API_ID = int(environ.get('API_ID', '20870885'))
+API_HASH = environ.get('API_HASH', 'a7e1280d30225e7aa036d57a0c9bb929')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1114789110 7170452349').split()]
-USERNAME = environ.get('USERNAME', "https://telegram.me/af_mhakal")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002030723564'))
+USERNAME = environ.get('USERNAME', "https://telegram.me/Raja1234321")
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002209778862'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+swpuQspBoVxiNjdl')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002246848988').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002030723564'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002209778862'))
 QR_CODE = environ.get('QR_CODE', 'https://i.postimg.cc/t42NPd70/IMG-20240907-161902-922.jpg')
 START_IMG = environ.get('START_IMG', 'https://i.postimg.cc/T12HxYsm/28920a67-174f-4628-90f8-87e158c2662a.jpg')
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002145528334'))
@@ -35,7 +35,7 @@ URL = environ.get('URL', 'af_mhakal')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002030723564'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002209778862'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/howto_open_short_link/10")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "4dbeb3373153a8396dd23d2e9da53c8f24f4b449")
@@ -56,7 +56,7 @@ PREMIUM_POINT = 1500
 auth_channel = environ.get('AUTH_CHANNEL', '-1002093650852')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002235094272'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002030723564')
+request_channel = environ.get('REQUEST_CHANNEL', '-1002209778862')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1008000054678'))
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002093650852'))
